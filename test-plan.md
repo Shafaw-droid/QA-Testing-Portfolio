@@ -64,20 +64,14 @@ The following activities are excluded from this testing plan:
 4. Test Environment
 
 
-Component
-Description
-Application 
- SauceDemo 
-Website |
-https://www.saucedemo.com/
-Device 
-Mac laptop
-Operating System |
-macOS
-Browser 
-Google Chrome
-Testing Method 
-Manual Testing
+| Component | Description |
+|-----------|-------------|
+| Application | SauceDemo |
+| Website | https://www.saucedemo.com/ |
+| Device | Mac laptop |
+| Operating System | macOS |
+| Browser | Google Chrome |
+| Testing Method | Manual Testing |
 
 
 
