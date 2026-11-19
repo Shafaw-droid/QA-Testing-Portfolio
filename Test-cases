@@ -1,0 +1,75 @@
+LOGIN FUNCTIONALITY
+
+
+  Positive test case
+
+| Field | Details |
+|-------|---------|
+| Test Case ID | TC_LOGIN_001 |
+| Linked Scenario | TS_LOGIN_001 |
+| Title | Verify successful login with valid credentials |
+| Preconditions | SauceDemo is accessible and the user is on the login page |
+| Test Data | Username: `standard_user`, Password: `secret_sauce` |
+| Test Steps | 1. Enter username<br>2. Enter password<br>3. Click Login |
+| Expected Result | User successfully logs in and the Products page is displayed |
+
+Negative test case
+
+| Field | Details |
+|-------|---------|
+| Test Case ID | TC_LOGIN_002 |
+| Linked Scenario | TS_LOGIN_002 |
+| Title | Verify that login fails with a valid username and incorrect password are entered |
+| Preconditions | SauceDemo is accessible, and the user is on the login page |
+| Test Data | Username: standard_user, Password: secret_Sauce |
+| Test Steps  | 1. Navigate to the SauceDemo login page<br>2. Enter the username<br>3. Enter the password<br>4. Click Login |
+| Expected Result | Login is rejected, an appropriate error message appears, and the user remains unauthenticated. |
+
+Negative test case
+
+| Field | Details |
+|-------|---------|
+| Test Case ID | TC_LOGIN_003 |
+| Linked Scenario | TS_LOGIN_003 |
+| Title | Verify that login fails with an invalid username and correct password |
+| Preconditions | SauceDemo is accessible, and the user is on the login page |
+| Test Data | Username: `unknown_user`; Password: `secret_sauce` |
+| Test Steps | 1. Open SauceDemo<br>2. Enter `unknown_user`<br>3. Enter `secret_sauce`<br>4. Click Login |
+| Expected Result | Login is rejected, an appropriate error message appears, and the user remains unauthenticated. |
+
+
+PRODUCT BROWSING AND SORTING
+
+
+| Field | Details |
+|-------|---------|
+| Test Case ID | TC_PRODUCT_001 |
+| Linked Scenario | TS_PRODUCT_001 |
+| Title | Verify that products are displayed with names, descriptions and prices |
+| Preconditions | SauceDemo is accessible, and the user is logged in and viewing the Products page |
+| Test Data | Username: `standard_user`; Password: `secret_sauce` |
+| Test Steps | 1. View the Products page<br>2. Inspect the displayed product listings<br>3. Check that each product has a name, description and price |
+| Expected Result | Each displayed product has a visible name, description and price. |
+
+
+| Field | Details |
+|-------|---------|
+| Test Case ID | TC_PRODUCT_002 |
+| Linked Scenario | TS_PRODUCT_002 |
+| Title | Verify that products can be sorted by price in ascending and descending order |
+| Preconditions | User is logged in and viewing the Products page |
+| Test Data | Sort options: Price (low to high), Price (high to low) |
+| Test Steps | 1. Locate the sorting dropdown on the Products page<br>2. Select Price (low to high)<br>3. Check the displayed product prices from top to bottom<br>4. Select Price (high to low)<br>5. Check the displayed product prices again |
+| Expected Result | Low to high: Prices appear in ascending order, from cheapest to most expensive.<br>High to low:** Prices appear in descending order, from most expensive to cheapest. |
+
+
+| Field | Details |
+|---|---|
+| Test Case ID | TC_PRODUCT_003 |
+| Linked Scenario | TS_PRODUCT_003 |
+| Title | Verify that products can be sorted alphabetically by name from A to Z and Z to A |
+| Preconditions | SauceDemo is accessible, and the user is logged in and viewing the Products page |
+| Test Data | Sort options: Name (A to Z), Name (Z to A) |
+| Test Steps | 1. Locate the sorting dropdown.<br>2. Select Name (A to Z).<br>3. Check the displayed product names from top to bottom.<br>4. Select Name (Z to A).<br>5. Check the displayed product names again. |
+| Expected Result | Products are displayed alphabetically in ascending order (A to Z) and descending order (Z to A), according to the selected sorting option. |
+
