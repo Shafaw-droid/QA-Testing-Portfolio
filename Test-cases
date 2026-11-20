@@ -73,3 +73,47 @@ PRODUCT BROWSING AND SORTING
 | Test Steps | 1. Locate the sorting dropdown.<br>2. Select Name (A to Z).<br>3. Check the displayed product names from top to bottom.<br>4. Select Name (Z to A).<br>5. Check the displayed product names again. |
 | Expected Result | Products are displayed alphabetically in ascending order (A to Z) and descending order (Z to A), according to the selected sorting option. |
 
+
+SHOPPING CART
+
+| Field | Details |
+|---|---|
+| Test Case ID | TC_CART_001 |
+| Linked Scenario | TS_CART_001 |
+| Title | Verify that a user can add a product to the shopping cart successfully |
+| Preconditions | User is logged in and viewing the Products page |
+| Test Data | Product: Sauce Labs Backpack |
+| Test Steps | 1. Locate Sauce Labs Backpack on the Products page.<br>2. Click Add to cart.<br>3. Click the shopping cart icon.<br>4. Check the products displayed in the cart. |
+| Expected Result | Sauce Labs Backpack appears in the shopping cart, and the cart badge reflects the added item. |
+
+
+| Field | Details |
+|---|---|
+| Test Case ID | TC_CART_002 |
+| Linked Scenario | TS_CART_002 |
+| Title | Verify that a user can remove a product from the shopping cart successfully |
+| Preconditions | User is logged in, and Sauce Labs Fleece Jacket has already been added to the shopping cart |
+| Test Data | Product: Sauce Labs Fleece Jacket |
+| Test Steps | 1. Click the shopping cart icon.<br>2. Locate Sauce Labs Fleece Jacket in the cart.<br>3. Click Remove beside the product.<br>4. Check the cart contents and cart badge. |
+| Expected Result | Sauce Labs Fleece Jacket is no longer displayed in the cart, and the cart badge updates to reflect the remaining number of items |
+
+
+| Field | Details |
+|---|---|
+| Test Case ID | TC_CART_003 |
+| Linked Scenario | TS_CART_003 |
+| Title | Verify that products remain in the shopping cart when navigating between the Products and Cart pages |
+| Preconditions | User is logged in and viewing the Products page |
+| Test Data | Product: Sauce Labs Fleece Jacket |
+| Test Steps | 1. Locate Sauce Labs Fleece Jacket on the Products page.<br>2. Click Add to cart.<br>3. Click the shopping cart icon to open the Cart page.<br>4. Click Continue Shopping to return to the Products page.<br>5. Click the shopping cart icon again.<br>6. Check the cart contents. |
+| Expected Result | Sauce Labs Fleece Jacket remains in the cart after navigation, and the cart badge correctly reflects the number of items. |
+
+| Field | Details |
+|---|---|
+| Test Case ID | TC_CART_004 |
+| Linked Scenario | TS_CART_004 |
+| Title | Verify that the shopping cart displays added products with the correct details |
+| Preconditions | User is logged in and viewing the Products page |
+| Test Data | Product: Sauce Labs Fleece Jacket |
+| Test Steps | 1. Locate Sauce Labs Fleece Jacket on the Products page.<br>2. Note its name, description and price.<br>3. Click Add to cart.<br>4. Click the shopping cart icon.<br>5. Check the product name, description, price and quantity displayed in the cart. |
+| Expected Result | Sauce Labs Fleece Jacket appears in the cart with the same name, description and price shown on the Products page. Its quantity is 1. |
